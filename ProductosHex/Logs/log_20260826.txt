@@ -1,0 +1,30 @@
+[INFO] [12:17:21] Consultando factura ID: 1
+[INFO] [12:18:11] Iniciando proceso de creación de factura para Cliente ID: 1
+[INFO] [12:18:12] Factura ID 2 creada exitosamente. Total: $ 18.900,00
+[INFO] [14:08:03] Consultando factura ID: 4
+[WARN] [14:08:06] Factura ID 4 no fue encontrada.
+[INFO] [15:53:29] Consultando listado de facturas paginado: Página 1, Tamaño 10
+[INFO] [16:05:36] Consultando listado de facturas paginado: Página 1, Tamaño 10
+[INFO] [16:38:15] Consultando listado de facturas paginado: Página 1, Tamaño 10
+[ERROR] [16:48:06] Excepción no controlada en Productos.Eliminar | Excepcion: An error occurred while updating the entries. See the inner exception for details. | StackTrace:    en System.Data.Entity.Internal.InternalContext.SaveChanges()
+   en System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   en System.Data.Entity.DbContext.SaveChanges()
+   en ProductosHex.Infrastructure.Repositories.ProductoRepositoryEF.Eliminar(Int32 id) en C:\Users\dbetancourth\source\repos\ProductosHex\ProductosHex.Infrastructure\Repositories\ProductoRepositoryEF.cs:línea 79
+   en ProductosHex.Application.Services.ProductoService.EliminarProducto(Int32 id) en C:\Users\dbetancourth\source\repos\ProductosHex\ProductosHex.Application\Services\ProductoService.cs:línea 55
+   en ProductosHex.Controllers.ProductosController.Eliminar(Int32 id) en C:\Users\dbetancourth\source\repos\ProductosHex\ProductosHex\Controllers\ProductosController.cs:línea 58
+   en lambda_method(Closure , Object , Object[] )
+   en System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass6_2.<GetExecutor>b__2(Object instance, Object[] methodParameters)
+   en System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   en System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- Fin del seguimiento de la pila de la ubicación anterior donde se produjo la excepción ---
+   en System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   en System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   en System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- Fin del seguimiento de la pila de la ubicación anterior donde se produjo la excepción ---
+   en System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   en System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   en System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- Fin del seguimiento de la pila de la ubicación anterior donde se produjo la excepción ---
+   en System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   en System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   en System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()

@@ -1,0 +1,14 @@
+## Visual Studio / .NET Ignore
+[Bb]in/
+[Ob]j/
+.vs/
+*.user
+*.suo
+*.cache
+*.docstates
+
+## Packages & Databases
+packages/
+*.db
+*.sqlite
+*.log

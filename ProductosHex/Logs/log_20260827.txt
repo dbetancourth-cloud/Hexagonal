@@ -1,0 +1,178 @@
+[INFO] [08:23:16] Consultando listado de facturas paginado: Página 1, Tamaño 10
+[INFO] [08:33:35] Consultando listado de facturas paginado: Página 1, Tamaño 10
+[ERROR] [09:42:08] Excepción no controlada en Clientes.ObtenerPaginado | Excepcion: An error occurred while executing the command definition. See the inner exception for details. | StackTrace:    en System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   en System.Data.Entity.Core.Objects.Internal.ObjectQueryExecutionPlan.Execute[TResultType](ObjectContext context, ObjectParameterCollection parameterValues)
+   en System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClass41_0.<GetResults>b__1()
+   en System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   en System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClass41_0.<GetResults>b__0()
+   en System.Data.Entity.Infrastructure.DefaultExecutionStrategy.Execute[TResult](Func`1 operation)
+   en System.Data.Entity.Core.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   en System.Data.Entity.Core.Objects.ObjectQuery`1.<System.Collections.Generic.IEnumerable<T>.GetEnumerator>b__31_0()
+   en System.Data.Entity.Internal.LazyEnumerator`1.MoveNext()
+   en System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   en System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   en ProductosHex.Infrastructure.Repositories.ClienteRepositoryEF.ObtenerPaginado(Int32 pagina, Int32 tamanoPagina) en C:\Users\dbetancourth\source\repos\ProductosHex\ProductosHex.Infrastructure\Repositories\ClienteRepositoryEF.cs:línea 27
+   en ProductosHex.Application.Services.ClienteService.ObtenerPaginado(Int32 pagina, Int32 tamanoPagina) en C:\Users\dbetancourth\source\repos\ProductosHex\ProductosHex.Application\Services\ClienteService.cs:línea 28
+   en ProductosHex.Controllers.ClientesController.ObtenerPaginado(Int32 pagina, Int32 tamanoPagina) en C:\Users\dbetancourth\source\repos\ProductosHex\ProductosHex\Controllers\ClientesController.cs:línea 21
+   en lambda_method(Closure , Object , Object[] )
+   en System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass6_2.<GetExecutor>b__2(Object instance, Object[] methodParameters)
+   en System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   en System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- Fin del seguimiento de la pila de la ubicación anterior donde se produjo la excepción ---
+   en System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   en System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   en System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- Fin del seguimiento de la pila de la ubicación anterior donde se produjo la excepción ---
+   en System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   en System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   en System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- Fin del seguimiento de la pila de la ubicación anterior donde se produjo la excepción ---
+   en System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   en System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   en System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()
+[INFO] [09:43:19] Base de datos SQLite creada y esquema inicializado con éxito.
+[INFO] [09:47:37] Base de datos SQLite creada y esquema inicializado con éxito.
+[INFO] [10:01:01] Base de datos SQLite creada y esquema inicializado con éxito.
+[INFO] [10:29:58] Iniciando proceso de creación de factura para Cliente Doc: 1109465123
+[INFO] [10:29:58] Factura ID 1 creada exitosamente. Total: $ 22.725,00
+[INFO] [10:30:11] Consultando listado de facturas paginado: Página 1, Tamaño 10
+[INFO] [10:31:27] Consultando listado de facturas paginado: Página 1, Tamaño 10
+[INFO] [10:41:48] Consultando listado de facturas paginado: Página 1, Tamaño 10
+[ERROR] [11:39:40] Excepción no controlada en Clientes.Eliminar | Excepcion: An error occurred while updating the entries. See the inner exception for details. | StackTrace:    en System.Data.Entity.Internal.InternalContext.SaveChanges()
+   en System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   en System.Data.Entity.DbContext.SaveChanges()
+   en ProductosHex.Infrastructure.Repositories.ClienteRepositoryEF.Eliminar(Int32 id) en C:\Users\dbetancourth\source\repos\ProductosHex\ProductosHex.Infrastructure\Repositories\ClienteRepositoryEF.cs:línea 85
+   en ProductosHex.Application.Services.ClienteService.EliminarCliente(Int32 id) en C:\Users\dbetancourth\source\repos\ProductosHex\ProductosHex.Application\Services\ClienteService.cs:línea 59
+   en ProductosHex.Controllers.ClientesController.Eliminar(Int32 id) en C:\Users\dbetancourth\source\repos\ProductosHex\ProductosHex\Controllers\ClientesController.cs:línea 71
+   en lambda_method(Closure , Object , Object[] )
+   en System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass6_2.<GetExecutor>b__2(Object instance, Object[] methodParameters)
+   en System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   en System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- Fin del seguimiento de la pila de la ubicación anterior donde se produjo la excepción ---
+   en System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   en System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   en System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- Fin del seguimiento de la pila de la ubicación anterior donde se produjo la excepción ---
+   en System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   en System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   en System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- Fin del seguimiento de la pila de la ubicación anterior donde se produjo la excepción ---
+   en System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   en System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   en System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()
+[INFO] [11:42:22] Iniciando proceso de creación de factura para Cliente Doc: 1109465123
+[WARN] [11:42:22] Stock insuficiente para 'Bonyurt'. Solicitado: 110, Actual: 7.
+[ERROR] [11:42:25] Excepción no controlada en Facturas.Crear | Excepcion: Stock insuficiente para 'Bonyurt'. Stock actual: 7 | StackTrace:    en ProductosHex.Application.Services.FacturaService.CrearFactura(CrearFacturaRequest request) en C:\Users\dbetancourth\source\repos\ProductosHex\ProductosHex.Application\Services\FacturaService.cs:línea 88
+   en ProductosHex.Controllers.FacturasController.Crear(CrearFacturaRequest request) en C:\Users\dbetancourth\source\repos\ProductosHex\ProductosHex\Controllers\FacturasController.cs:línea 27
+   en lambda_method(Closure , Object , Object[] )
+   en System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass6_2.<GetExecutor>b__2(Object instance, Object[] methodParameters)
+   en System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   en System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- Fin del seguimiento de la pila de la ubicación anterior donde se produjo la excepción ---
+   en System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   en System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   en System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- Fin del seguimiento de la pila de la ubicación anterior donde se produjo la excepción ---
+   en System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   en System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   en System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- Fin del seguimiento de la pila de la ubicación anterior donde se produjo la excepción ---
+   en System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   en System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   en System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()
+[INFO] [12:00:02] Consultando listado de facturas paginado: Página 1, Tamaño 10
+[INFO] [12:26:49] Consultando listado de facturas paginado: Página 1, Tamaño 10
+[ERROR] [12:26:54] Excepción no controlada en Facturas.ObtenerTodas | Excepcion: An error occurred while executing the command definition. See the inner exception for details. | StackTrace:    en System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   en System.Data.Entity.Core.Objects.Internal.ObjectQueryExecutionPlan.Execute[TResultType](ObjectContext context, ObjectParameterCollection parameterValues)
+   en System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClass41_0.<GetResults>b__1()
+   en System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   en System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClass41_0.<GetResults>b__0()
+   en System.Data.Entity.Infrastructure.DefaultExecutionStrategy.Execute[TResult](Func`1 operation)
+   en System.Data.Entity.Core.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   en System.Data.Entity.Core.Objects.ObjectQuery`1.<System.Collections.Generic.IEnumerable<T>.GetEnumerator>b__31_0()
+   en System.Data.Entity.Internal.LazyEnumerator`1.MoveNext()
+   en System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   en System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   en ProductosHex.Infrastructure.Repositories.FacturaRepositoryEF.ObtenerPaginado(Int32 pagina, Int32 tamanoPagina) en C:\Users\dbetancourth\source\repos\ProductosHex\ProductosHex.Infrastructure\Repositories\FacturaRepositoryEF.cs:línea 40
+   en ProductosHex.Application.Services.FacturaService.ObtenerPaginado(Int32 pagina, Int32 tamanoPagina) en C:\Users\dbetancourth\source\repos\ProductosHex\ProductosHex.Application\Services\FacturaService.cs:línea 154
+   en ProductosHex.Controllers.FacturasController.ObtenerTodas(Int32 pagina, Int32 tamanoPagina) en C:\Users\dbetancourth\source\repos\ProductosHex\ProductosHex\Controllers\FacturasController.cs:línea 46
+   en lambda_method(Closure , Object , Object[] )
+   en System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass6_2.<GetExecutor>b__2(Object instance, Object[] methodParameters)
+   en System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   en System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- Fin del seguimiento de la pila de la ubicación anterior donde se produjo la excepción ---
+   en System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   en System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   en System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- Fin del seguimiento de la pila de la ubicación anterior donde se produjo la excepción ---
+   en System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   en System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   en System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- Fin del seguimiento de la pila de la ubicación anterior donde se produjo la excepción ---
+   en System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   en System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   en System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()
+[INFO] [12:28:04] Base de datos SQLite creada y esquema inicializado con éxito.
+[INFO] [12:34:19] Iniciando proceso de creación de factura para Cliente Doc: 1234567890
+[ERROR] [12:36:12] Excepción no controlada en Facturas.Crear | Excepcion: An error occurred while updating the entries. See the inner exception for details. | StackTrace:    en System.Data.Entity.Internal.InternalContext.SaveChanges()
+   en System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   en System.Data.Entity.DbContext.SaveChanges()
+   en ProductosHex.Infrastructure.Repositories.FacturaRepositoryEF.Agregar(FacturaEncabezado factura) en C:\Users\dbetancourth\source\repos\ProductosHex\ProductosHex.Infrastructure\Repositories\FacturaRepositoryEF.cs:línea 17
+   en ProductosHex.Application.Services.FacturaService.CrearFactura(CrearFacturaRequest request) en C:\Users\dbetancourth\source\repos\ProductosHex\ProductosHex.Application\Services\FacturaService.cs:línea 121
+   en ProductosHex.Controllers.FacturasController.Crear(CrearFacturaRequest request)
+   en lambda_method(Closure , Object , Object[] )
+   en System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass6_2.<GetExecutor>b__2(Object instance, Object[] methodParameters)
+   en System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   en System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- Fin del seguimiento de la pila de la ubicación anterior donde se produjo la excepción ---
+   en System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   en System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   en System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- Fin del seguimiento de la pila de la ubicación anterior donde se produjo la excepción ---
+   en System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   en System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   en System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- Fin del seguimiento de la pila de la ubicación anterior donde se produjo la excepción ---
+   en System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   en System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   en System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()
+[INFO] [12:36:17] Iniciando proceso de creación de factura para Cliente Doc: 1234567890
+[ERROR] [12:36:19] Excepción no controlada en Facturas.Crear | Excepcion: An error occurred while updating the entries. See the inner exception for details. | StackTrace:    en System.Data.Entity.Internal.InternalContext.SaveChanges()
+   en System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   en System.Data.Entity.DbContext.SaveChanges()
+   en ProductosHex.Infrastructure.Repositories.FacturaRepositoryEF.Agregar(FacturaEncabezado factura) en C:\Users\dbetancourth\source\repos\ProductosHex\ProductosHex.Infrastructure\Repositories\FacturaRepositoryEF.cs:línea 17
+   en ProductosHex.Application.Services.FacturaService.CrearFactura(CrearFacturaRequest request) en C:\Users\dbetancourth\source\repos\ProductosHex\ProductosHex.Application\Services\FacturaService.cs:línea 121
+   en ProductosHex.Controllers.FacturasController.Crear(CrearFacturaRequest request)
+   en lambda_method(Closure , Object , Object[] )
+   en System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass6_2.<GetExecutor>b__2(Object instance, Object[] methodParameters)
+   en System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   en System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- Fin del seguimiento de la pila de la ubicación anterior donde se produjo la excepción ---
+   en System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   en System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   en System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- Fin del seguimiento de la pila de la ubicación anterior donde se produjo la excepción ---
+   en System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   en System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   en System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- Fin del seguimiento de la pila de la ubicación anterior donde se produjo la excepción ---
+   en System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   en System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   en System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()
+[INFO] [12:37:16] Base de datos SQLite creada y esquema inicializado con éxito.
+[INFO] [12:42:12] Iniciando proceso de creación de factura para Cliente Doc: 123456789
+[INFO] [12:42:12] Factura FAC-000001 (ID: 1) creada exitosamente. Total: $ 186.592,00
+[INFO] [15:04:04] Consultando listado de facturas paginado: Página 1, Tamaño 10
+[INFO] [15:28:39] Consultando listado de facturas paginado: Página 1, Tamaño 10
+[INFO] [15:40:03] Iniciando proceso de creación de factura para Cliente Doc: 123456789
+[INFO] [15:40:03] Factura FAC-000002 (ID: 2) creada exitosamente. Total: $ 843.750,00
+[INFO] [15:44:13] Iniciando proceso de creación de factura para Cliente Doc: 123456789
+[INFO] [15:44:13] Factura FAC-000003 (ID: 3) creada exitosamente. Total: $ 1.687.500,00
+[INFO] [15:48:13] Iniciando proceso de creación de factura para Cliente Doc: 123456789
+[INFO] [15:48:13] Factura FAC-000004 (ID: 4) creada exitosamente. Total: $ 1.773.180,00
+[INFO] [16:00:01] Consultando listado de facturas paginado: Página 1, Tamaño 10
+[INFO] [16:00:32] Iniciando proceso de creación de factura para Cliente Doc: 123456789
+[INFO] [16:00:32] Factura FAC-000005 (ID: 5) creada exitosamente. Total: $ 1.494.704,00
+[INFO] [16:02:30] Consultando listado de facturas paginado: Página 1, Tamaño 10
+[INFO] [16:02:58] Iniciando proceso de creación de factura para Cliente Doc: 123456789
+[INFO] [16:02:59] Factura FAC-000006 (ID: 6) creada exitosamente. Total: $ 2.910.000,00

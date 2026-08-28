@@ -1,0 +1,6 @@
+C:\Users\dbetancourth\source\repos\ProductosHex\ProductosHex.Domain\bin\Debug\ProductosHex.Domain.dll
+C:\Users\dbetancourth\source\repos\ProductosHex\ProductosHex.Domain\bin\Debug\ProductosHex.Domain.pdb
+C:\Users\dbetancourth\source\repos\ProductosHex\ProductosHex.Domain\obj\Debug\ProductosHex.Domain.csproj.CoreCompileInputs.cache
+C:\Users\dbetancourth\source\repos\ProductosHex\ProductosHex.Domain\obj\Debug\ProductosHex.Domain.dll
+C:\Users\dbetancourth\source\repos\ProductosHex\ProductosHex.Domain\obj\Debug\ProductosHex.Domain.pdb
+C:\Users\dbetancourth\source\repos\ProductosHex\ProductosHex.Domain\obj\Debug\ProductosHex.Domain.csproj.AssemblyReference.cache

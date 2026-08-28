@@ -1,0 +1,10 @@
+C:\Users\dbetancourth\source\repos\ProductosHex\ProductosHex.Application\bin\Debug\ProductosHex.Application.dll
+C:\Users\dbetancourth\source\repos\ProductosHex\ProductosHex.Application\bin\Debug\ProductosHex.Application.pdb
+C:\Users\dbetancourth\source\repos\ProductosHex\ProductosHex.Application\bin\Debug\ProductosHex.Domain.dll
+C:\Users\dbetancourth\source\repos\ProductosHex\ProductosHex.Application\bin\Debug\ProductosHex.Domain.pdb
+C:\Users\dbetancourth\source\repos\ProductosHex\ProductosHex.Application\obj\Debug\ProductosHex.Application.csproj.AssemblyReference.cache
+C:\Users\dbetancourth\source\repos\ProductosHex\ProductosHex.Application\obj\Debug\ProductosHex.Application.csproj.CoreCompileInputs.cache
+C:\Users\dbetancourth\source\repos\ProductosHex\ProductosHex.Application\obj\Debug\ProductosHex.Application.csproj.CopyComplete
+C:\Users\dbetancourth\source\repos\ProductosHex\ProductosHex.Application\obj\Debug\ProductosHex.Application.dll
+C:\Users\dbetancourth\source\repos\ProductosHex\ProductosHex.Application\obj\Debug\ProductosHex.Application.pdb
+C:\Users\dbetancourth\source\repos\ProductosHex\ProductosHex.Application\bin\Debug\System.ComponentModel.Annotations.dll
