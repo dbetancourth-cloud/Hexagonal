@@ -9,9 +9,16 @@ namespace ProductosHex.Controllers
     {
         private readonly ICategoriaService _categoriaService;
 
+        // Constructor predeterminado (usado por el runtime Web API)
         public CategoriasController()
         {
             _categoriaService = ServiceFactory.CrearCategoriaService();
+        }
+
+        // Constructor para Inyección de Dependencias / Pruebas Unitarias
+        public CategoriasController(ICategoriaService categoriaService)
+        {
+            _categoriaService = categoriaService;
         }
 
         [HttpGet]

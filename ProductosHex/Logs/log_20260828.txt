@@ -1,0 +1,2 @@
+[INFO] [10:59:56] Consultando listado de facturas paginado: Página 1, Tamaño 10
+[INFO] [15:03:55] Consultando listado de facturas paginado: Página 1, Tamaño 10
